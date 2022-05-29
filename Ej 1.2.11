@@ -1,0 +1,47 @@
+Procedimiento para el menú
+    
+    Elegir Suma, Resta, Multiplcacion y División
+
+Función Suma, Resta, Multiplicacion y División
+
+    Pedir números (a,b)
+
+    Acción 1.2.11
+        AMBIENTE
+            a,b, resultado := númerico
+
+            ALGORITMO
+            
+            Procedimiento Menú ():alfanúmerico
+                oper: alfanúmerico
+                
+                    Escribir: "Ingrese + si quieres sumar"
+                    Escribir: "Ingrese - si quieres restar"
+                    Escribir: "Ingrese * si quieres multiplicar"
+                    Escribir: "Ingrese / si quieres dividir"
+                Leer (oper);
+            FinProcedimiento
+
+            Función OPERACION (n1,n2:númerico):númerico es
+
+                oper := operación
+                Según operación hacer
+                    operación = + entonces
+                        a + b := result
+                    operación = -
+                        a - b := result
+                    operación = *
+                        a * b := result
+                    operación = =
+                        a DIV b := result
+                finFunción
+
+            Escribir "Ingrese 2 números"; Leer (a,b)
+            Menu()
+            OPERACION (a,b)
+
+            resultado := OPERACION (a,b)
+            Escribir: "El resultado de tu operación es de:" ,resultado      
+        Fin Acción
+
+
